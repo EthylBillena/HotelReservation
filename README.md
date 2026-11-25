@@ -98,7 +98,7 @@ Important keys:
 - Primary Key (PK): room_id
 - No foreign key is shown
 
-Summary
+Summary: 
 Our database consists of five tables: Guest, Users, Reservations, Payment, and Room. Each table has its own purpose in managing the hotel reservation system.
 
 The Guest table stores guest information, while the Users table manages system accounts. The Reservations table serves as the main table because it connects guests, users, and rooms. Meanwhile, the Payment table records the financial transactions associated with reservations, and the Room table stores room information and availability.
