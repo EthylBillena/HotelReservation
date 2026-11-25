@@ -1,3 +1,41 @@
+CREATE TABLE guest (
+    GuestID INT AUTO_INCREMENT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    PhoneNumber VARCHAR(20),
+    Email VARCHAR(100),
+    Address VARCHAR(255),
+    IDNumber VARCHAR(50)
+) ENGINE=InnoDB;
+
+CREATE TABLE room (
+    RoomID INT AUTO_INCREMENT PRIMARY KEY,
+    RoomTypeID INT,
+    RoomNumber VARCHAR(20),
+    FloorNumber INT,
+    Status VARCHAR(30),
+    PricePerNight DECIMAL(10,2),
+
+    FOREIGN KEY (RoomTypeID)
+    REFERENCES roomtype(RoomTypeID)
+) ENGINE=InnoDB;
+
+CREATE TABLE payment (
+    PaymentID INT AUTO_INCREMENT PRIMARY KEY,
+    ReservationID INT,
+    StaffID INT NULL,
+    PaymentDate DATE,
+    Amount DECIMAL(10,2),
+    PaymentMethod VARCHAR(30),
+    PaymentStatus VARCHAR(30),
+
+    FOREIGN KEY (ReservationID)
+    REFERENCES reservation(ReservationID),
+
+    FOREIGN KEY (StaffID)
+    REFERENCES staff(StaffID)
+) ENGINE=InnoDB;
+
 Project Title: Hotel Reservation Management System Team/Members: Alyshia Natalaray, Frence Laurent
 Loraña, J-ann Vergara, Kim Russel Dinero, Selyssa
 Palencia, Ethyl Ellane Billena, Delbert Lester Lustan Section: 2B NT Assigned Roles: Leader: Alyshia Natalaray,  Programmer: Alyshia Natalaray, Sellysa Palencia, Power Point Presentation: Jay Ann Vergara, Ethyl Ellane Billena, Frence Laurent Loraña, Documentation: Kim Russel Dinero, Delbert Lester Lustan. Actual Contribution: Leader: Alyshia Natalaray,  Programmer: Alyshia Natalaray, Sellysa Palencia, Power Point Presentation: Jay Ann Vergara, Ethyl Ellane Billena, Frence Laurent Loraña, Documentation: Kim Russel Dinero, Delbert Lester Lustan.
