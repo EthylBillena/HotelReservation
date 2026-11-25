@@ -1,3 +1,4 @@
+<img width="1385" height="1005" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/4bd6d9f6-d2e2-4981-85d0-b17b563fa4c0" />
 Project Title: Hotel Reservation Management System Team/Members: Alyshia Natalaray, Frence Laurent
 Loraña, J-ann Vergara, Kim Russel Dinero, Selyssa
 Palencia, Ethyl Ellane Billena, Delbert Lester Lustan Section: 2B NT Assigned Roles: Leader: Alyshia Natalaray,  Programmer: Alyshia Natalaray, Sellysa Palencia, Power Point Presentation: Jay Ann Vergara, Ethyl Ellane Billena, Frence Laurent Loraña, Documentation: Kim Russel Dinero, Delbert Lester Lustan. Actual Contribution: Leader: Alyshia Natalaray,  Programmer: Alyshia Natalaray, Sellysa Palencia, Power Point Presentation: Jay Ann Vergara, Ethyl Ellane Billena, Frence Laurent Loraña, Documentation: Kim Russel Dinero, Delbert Lester Lustan.
