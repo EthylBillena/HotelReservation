@@ -61,7 +61,7 @@ CREATE TABLE reservations (
 
 Project Title: Hotel Reservation Management System Team/Members: Alyshia Natalaray, Frence Laurent
 Loraña, J-ann Vergara, Kim Russel Dinero, Selyssa
-Palencia, Ethyl Ellane Billena, Delbert Lester Lustan Section: 2B NT Assigned Roles: Leader: Alyshia Natalaray,  Programmer: Alyshia Natalaray, Sellysa Palencia, Power Point Presentation: Jay Ann Vergara, Ethyl Ellane Billena, Frence Laurent Loraña, Documentation: Kim Russel Dinero, Delbert Lester Lustan. Actual Contribution: Leader: Alyshia Natalaray,  Programmer: Alyshia Natalaray, Sellysa Palencia, Power Point Presentation: Jay Ann Vergara, Ethyl Ellane Billena, Frence Laurent Loraña, Documentation: Kim Russel Dinero, Delbert Lester Lustan.
+Palencia, Ethyl Ellane Billena, Delbert Lester Lustan Section: 2B NT Assigned Roles: Leader: Alyshia Natalaray,  Programmer: Alyshia Natalaray, Sellysa Palencia, Power Point Presentation: Ethyl Ellane Billena, Backend: Frence Laurent Loraña, Delbert Lester Lustan, Frontend: Jay Ann Vergara, Sellysa Palencia, Documentation: Kim Russel Dinero. Actual Contribution: Leader: Alyshia Natalaray, Frence Laurent Lorana,  Programmer: Alyshia Natalaray, Sellysa Palencia, Power Point Presentation: Ethyl Ellane Billena, Backend: Frence Laurent Loraña, Delbert Lester Lustan, Frontend: Jay Ann Vergara, Sellysa Palencia, Documentation: Kim Russel Dinero. 
 
 Project Overview: Problem - 
 Manual reservation processes can lead to problems such as duplicate bookings, misplaced records, incorrect reservation details, and delays in assisting customers. 
