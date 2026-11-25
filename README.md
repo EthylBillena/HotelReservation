@@ -76,6 +76,12 @@ Scope: •Records and maintains essential guest details, such as name, contact i
 
 Scope: •Limited to Reservation Management •Payment Processing •External Booking Platform Integration •Dependence on Accurate Data •Technical Requirements
 
+Technology and Setup:
+Java NetBeans – Apache NetBeans IDE 31
+MySQL Workbench 8.0 CE, JDBC Driver
+Dependencies:mysql-connector-j-26.7.00.jar Java Dependencies:
+- JDK 31 (Default)
+
 Installation and Execution: 1. Download Source Code 2. Open Github 3. Put the Selection name or Title 4. Select Public on Readme 5. Open README. md for setup details. 6. Find the pencil to edit 7. Insert Documents and Documentation Cloning or Downloading: You can clone or download it in zip file Importing the .sql file: If you already have the SQL file: 1. Open MySQL Workbench. 2. Open your SQL Editor. 3. Click File → Open SQL Script. 4. Select your .sql file. 5. Click the lightning bolt (Execute). 6. Wait for the script to finish executing. 
 
 <img width="1385" height="1005" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/4bd6d9f6-d2e2-4981-85d0-b17b563fa4c0" />
