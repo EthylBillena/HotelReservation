@@ -62,14 +62,14 @@ A. Guest Table (Primary Key): Stores guest information in one place. Instead of 
 Purpose: Stores the personal information of guests who use the hotel reservation system. Field	Data Type	Description GuestID INT(11)	Unique ID of each guest. FullName	VARCHAR(50)	Complete name of the guest. Contact	VARCHAR(20)	Guest's contact number. Email	VARCHAR(20)	Guest's email address.
 Address	VARCHAR(100)	Guest's residential address. RegistrationDate	DATE	Date the guest registered.
 
-Important keys:
+Important keys: 
 -Primary Key (PK): GuestID
 -No foreign key is shown.
 
 B. Users Table (Primary Key): Stores user account information. It helps identify who is authorized to access and manage the hotel reservation system based on their assigned role.
 Purpose: Stores information about the system users or staff members who manage hotel reservations. Field 	Data Type Description UserID 	INT(11)	Unique ID of each user. FullName	VARCHAR(100)	Complete name of the user.Email VARCHAR(100)	User's email address. Password	VARCHAR(255)	User's account password. Role	VARCHAR(20)	Identifies the user's role or access level.
 
-Important keys:
+Important keys: 
 - Primary Key (PK): UserID
 - No foreign key is shown.
 
