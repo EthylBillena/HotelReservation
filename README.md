@@ -66,3 +66,16 @@ Our database consists of five tables: Guest, Users, Reservations, Payment, and R
 The Guest table stores guest information, while the Users table manages system accounts. The Reservations table serves as the main table because it connects guests, users, and rooms. Meanwhile, the Payment table records the financial transactions associated with reservations, and the Room table stores room information and availability.
 
 We use primary keys (PK) to uniquely identify each record and foreign keys (FK) to establish relationships between tables. These tables work together to make hotel reservations, room management, and payment tracking more organized and efficient.
+
+<img width="1182" height="1141" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/2ced1d76-0b3a-4765-8a19-8339a34c45c3" />
+<img width="1215" height="1144" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/6d7a7573-e27c-45b2-a2dc-0fb8e4edb499" />
+Image of Create// Add a New Guest
+<img width="1208" height="1149" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/cb531eab-e8e3-4a03-aaf9-be4fe75a4754" />
+Image of Read// Read Customer Information
+<img width="1195" height="1140" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/138051fe-35e9-4203-a1f1-9043fa758f61" />
+Image for Update// Update Guest Information/Reservation
+<img width="1211" height="1127" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/4a9c37b7-63c2-4c88-a887-0d30a952778c" />
+Image of Delete// Delete Guest
+<img width="1202" height="1139" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/69146ed4-e44c-43df-bdb5-0e3d63f01627" />
+Image of Error// it will be error if they didn't complete the given informations
+
