@@ -1,40 +1,63 @@
+CREATE DATABASE hotel_reservation;
+USE hotel_reservation;
+
 CREATE TABLE guest (
-    GuestID INT AUTO_INCREMENT PRIMARY KEY,
-    FirstName VARCHAR(50),
-    LastName VARCHAR(50),
-    PhoneNumber VARCHAR(20),
+    GuestID INT(11) AUTO_INCREMENT PRIMARY KEY,
+    FullName VARCHAR(50),
+    Contact VARCHAR(50),
     Email VARCHAR(100),
-    Address VARCHAR(255),
-    IDNumber VARCHAR(50)
-) ENGINE=InnoDB;
+    Address VARCHAR(100),
+    RegistrationDate DATE
+);
 
 CREATE TABLE room (
-    RoomID INT AUTO_INCREMENT PRIMARY KEY,
-    RoomTypeID INT,
-    RoomNumber VARCHAR(20),
-    FloorNumber INT,
-    Status VARCHAR(30),
-    PricePerNight DECIMAL(10,2),
-
-    FOREIGN KEY (RoomTypeID)
-    REFERENCES roomtype(RoomTypeID)
-) ENGINE=InnoDB;
+    room_id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    room_no VARCHAR(20),
+    status VARCHAR(20)
+);
 
 CREATE TABLE payment (
-    PaymentID INT AUTO_INCREMENT PRIMARY KEY,
-    ReservationID INT,
-    StaffID INT NULL,
+    PaymentID INT(11) AUTO_INCREMENT PRIMARY KEY,
+    ReservationID INT(11),
     PaymentDate DATE,
     Amount DECIMAL(10,2),
     PaymentMethod VARCHAR(30),
-    PaymentStatus VARCHAR(30),
+    Status VARCHAR(30),
 
     FOREIGN KEY (ReservationID)
-    REFERENCES reservation(ReservationID),
+        REFERENCES reservations(reservation_id)
+);
 
-    FOREIGN KEY (StaffID)
-    REFERENCES staff(StaffID)
-) ENGINE=InnoDB;
+CREATE TABLE users (
+    UserID INT(11) AUTO_INCREMENT PRIMARY KEY,
+    FullName VARCHAR(100),
+    Email VARCHAR(100),
+    Password VARCHAR(255),
+    Role VARCHAR(30)
+);
+
+CREATE TABLE reservations (
+    reservation_id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    guest_name VARCHAR(100),
+    room_no VARCHAR(20),
+    check_in DATE,
+    check_out DATE,
+    total_amount DECIMAL(10,2),
+    status VARCHAR(30),
+
+    GuestID INT(11),
+    room_id INT(11),
+    UserID INT(11),
+
+    FOREIGN KEY (GuestID)
+        REFERENCES guest(GuestID),
+
+    FOREIGN KEY (room_id)
+        REFERENCES room(room_id),
+
+    FOREIGN KEY (UserID)
+        REFERENCES users(UserID)
+);
 
 Project Title: Hotel Reservation Management System Team/Members: Alyshia Natalaray, Frence Laurent
 Loraña, J-ann Vergara, Kim Russel Dinero, Selyssa
@@ -63,8 +86,8 @@ Purpose: Stores the personal information of guests who use the hotel reservation
 Address	VARCHAR(100)	Guest's residential address. RegistrationDate	DATE	Date the guest registered.
 
 Important keys: 
--Primary Key (PK): GuestID
--No foreign key is shown.
+- Primary Key (PK): GuestID
+- No foreign key is shown.
 
 B. Users Table (Primary Key): Stores user account information. It helps identify who is authorized to access and manage the hotel reservation system based on their assigned role.
 Purpose: Stores information about the system users or staff members who manage hotel reservations. Field 	Data Type Description UserID 	INT(11)	Unique ID of each user. FullName	VARCHAR(100)	Complete name of the user.Email VARCHAR(100)	User's email address. Password	VARCHAR(255)	User's account password. Role	VARCHAR(20)	Identifies the user's role or access level.
